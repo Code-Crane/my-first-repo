@@ -1,4 +1,4 @@
-# git test
+# Git Test
 이 프로젝트는 [Git Hub Training]을 위해 만들어졌습니다.
 
 ## 설치 방법
