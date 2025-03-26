@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>내 첫 번째 웹사이트</title>
+    <title> Complex Portfolio Website </title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -67,8 +67,6 @@
             grid-column: 3 / 4;
             grid-row: 1 / 2;
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
             justify-content: center;
             padding: 1rem;
             border: 1px solid #ccc;
@@ -76,23 +74,25 @@
             background-color: #fff;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+        .login-container form {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
         .login-container input {
-            margin-bottom: 0.5rem;
             padding: 0.5rem;
             font-size: 1rem;
             border: 1px solid #ccc;
             border-radius: 4px;
-            width: 100%;
         }
         .login-container button {
-            padding: 0.5rem 2rem;
+            padding: 0.5rem 1rem;
             font-size: 1rem;
             background-color: #333;
             color: white;
             border: none;
             border-radius: 4px;
             cursor: pointer;
-            align-self: flex-end;
         }
         .login-container button:hover {
             background-color: #555;
@@ -119,13 +119,13 @@
             cursor: pointer;
         }
         .button-container button:hover {
-            background-color: #555;
+            background-colOld #555;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>내 웹사이트에 오신 것을 환영합니다</h1>
+        <h1> Information Retrieval Portfolio </h1>
         <div class="search-container">
             <input type="text" placeholder="검색어를 입력하세요">
             <button onclick="location.href='search.html'">🔍</button>
@@ -136,7 +136,7 @@
             <!-- ...other grid cells can be filled as needed... -->
             <div class="button-container">
                 <!-- 20 buttons -->
-                <button>버튼 1</button>
+                <button> 백준 조지기 </button>
                 <button>버튼 2</button>
                 <button>버튼 3</button>
                 <button>버튼 4</button>
@@ -158,9 +158,11 @@
                 <button>버튼 20</button>
             </div>
             <div class="login-container">
-                <input type="text" placeholder="ID를 입력하세요">
-                <input type="password" placeholder="PWD를 입력하세요">
-                <button>로그인</button>
+                <form>
+                    <input type="text" placeholder="ID를 입력하세요">
+                    <input type="password" placeholder="PWD를 입력하세요">
+                    <button>로그인</button>
+                </form>
             </div>
         </div>
     </main>
