@@ -119,16 +119,38 @@
             cursor: pointer;
         }
         .button-container button:hover {
-            background-colOld #555;
+            background-color: #555;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1> Information Retrieval Portfolio </h1>
+    <header style="background-color: #d2b48c;"></header>
+        <h1 style="font-size: 16pt; background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            animation: rainbow 3s linear infinite;"> Information Retrieval Portfolio </h1>
+        <style>
+            @keyframes rainbow {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+            }
+            h1 {
+            background-size: 300%;
+            }
+        </style>
         <div class="search-container">
-            <input type="text" placeholder="검색어를 입력하세요">
-            <button onclick="location.href='search.html'">🔍</button>
+            <input type="text" placeholder="검색어를 입력하세요" style="padding: 0.5rem; font-size: 1rem; border: 1px solid #ccc; border-radius: 20px; width: 400px; transition: box-shadow 0.3s ease;">
+            <button onclick="location.href='search.html'" style="background-color: #333; color: white; border: none; padding: 0.5rem 1rem; margin-left: 0.5rem; cursor: pointer; border-radius: 20px; font-size: 1rem; transition: box-shadow 0.3s ease;">🔍</button>
+            <style>
+                .search-container input[type="text"]:hover, 
+                .search-container button:hover {
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                }
+            </style>
         </div>
     </header>
     <main>
