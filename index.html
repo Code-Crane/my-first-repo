@@ -28,14 +28,94 @@
             bottom: 0;
             width: 100%;
         }
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1rem;
+        }
+        .search-container input[type="text"] {
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 300px;
+        }
+        .search-container button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin-left: 0.5rem;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        .search-container button:hover {
+            background-color: #555;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 1rem;
+            height: 80vh;
+            margin: 2rem auto;
+            max-width: 1200px;
+        }
+        .login-container {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .login-container input {
+            margin-bottom: 0.5rem;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+        }
+        .login-container button {
+            padding: 0.5rem 2rem;
+            font-size: 1rem;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            align-self: flex-end;
+        }
+        .login-container button:hover {
+            background-color: #555;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>내 웹사이트에 오신 것을 환영합니다</h1>
+        <div class="search-container">
+            <input type="text" placeholder="검색어를 입력하세요">
+            <button onclick="location.href='search.html'">🔍</button>
+        </div>
     </header>
     <main>
-        <p>이것은 내 첫 번째 프로젝트로 만든 기본 웹페이지입니다.</p>
+        <div class="grid-container">
+            <!-- ...other grid cells can be filled as needed... -->
+            <div class="login-container">
+                <input type="text" placeholder="ID를 입력하세요">
+                <input type="password" placeholder="PWD를 입력하세요">
+                <button>로그인</button>
+            </div>
+        </div>
     </main>
     <footer>
         <p>&copy; 2025 내 첫 번째 웹사이트</p>
