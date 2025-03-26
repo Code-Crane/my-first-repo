@@ -122,6 +122,26 @@
             background-color: #555;
         }
     </style>
+    <style>
+        header {
+            background-color: #d2b48c; /* 기존 색상 유지 */
+        }
+        main {
+            background-color: #e6f7ff; /* 메인 영역 배경색 추가 */
+        }
+        .grid-container {
+            background-color: #f9f9f9; /* 그리드 컨테이너 배경색 추가 */
+        }
+        .button-container {
+            background-color: #fffbe6; /* 버튼 컨테이너 배경색 추가 */
+        }
+        .login-container {
+            background-color: #e6ffe6; /* 로그인 컨테이너 배경색 추가 */
+        }
+        footer {
+            background-color: #333; /* 기존 색상 유지 */
+        }
+    </style>
 </head>
 <body>
     <header style="background-color: #d2b48c;"></header>
@@ -153,10 +173,10 @@
             </style>
         </div>
     </header>
-    <main>
-        <div class="grid-container">
+    <main style="background-color: #e6f7ff;">
+        <div class="grid-container" style="background-color: #f9f9f9;">
             <!-- ...other grid cells can be filled as needed... -->
-            <div class="button-container">
+            <div class="button-container" style="background-color: #fffbe6;">
                 <!-- 20 buttons -->
                 <button onclick="location.href='https://www.acmicpc.net/'"> 백준 조지기 </button>
                 <button>버튼 2</button>
@@ -180,7 +200,7 @@
                 <button>버튼 20</button>
             <!-- 로그인 버튼  -->
             </div>
-            <div class="login-container" style="background-color: transparent; border: none; box-shadow: none;">
+            <div class="login-container" style="background-color: #e6ffe6; border: none; box-shadow: none;">
                 <div>
                     <button onclick="location.href='login.html';" style="background-color: blue; color: white; border: none; padding: 0.5rem 1rem; cursor: pointer; border-radius: 20px; font-size: 1rem; transition: box-shadow 0.3s ease; width: 100%;">
                         로그인
