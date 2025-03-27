@@ -141,7 +141,15 @@
             background-color: #333; /* 기존 색상 유지 */
         }
     </style>
-</head>
+    <style>
+        .login-container button:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
+        }
+        .container3 button:hover {
+            text-decoration: underline; /* 밑줄 추가 */
+        }
+    </style>
+    </head>
 <body>
     <header style="background-color: transparent;"></header>
     <p style="font-size: 16px; font-family: serif; background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet); 
@@ -179,11 +187,21 @@
             <!-- ...other grid cells can be filled as needed... -->
             <div class="button-container" style="background-color: #fffbe6;">
                 <!-- 20 buttons -->
-                <button onclick="location.href='https://www.acmicpc.net/'"> 백준 </button>
-                <button> Git </button>
-                <button> NBlog</button>
-                <button> Reddit </button>
-                <button> X </button>
+                <button onclick="location.href='https://www.acmicpc.net/'" style="background-color: white; border: none; padding: 0.5rem; border-radius: 4px; cursor: pointer;">
+                    <img src="https://www.acmicpc.net/favicon.ico" alt="백준" style="width: 24px; height: 24px;">
+                </button>
+                <button onclick="location.href='https://github.com/'" style="background-color: white; border: none; padding: 0.5rem; border-radius: 4px; cursor: pointer;">
+                    <img src="https://github.githubassets.com/favicons/favicon.svg" alt="GitHub" style="width: 24px; height: 24px;">
+                </button>
+                <button onclick="location.href='https://blog.naver.com/'" style="background-color: white; border: none; padding: 0.5rem; border-radius: 4px; cursor: pointer;">
+                    <img src="https://blogimgs.pstatic.net/nblog/mylog/post/og_default_image.png" alt="NBlog" style="width: 24px; height: 24px;">
+                </button>
+                <button onclick="location.href='https://www.reddit.com/'" style="background-color: white; border: none; padding: 0.5rem; border-radius: 4px; cursor: pointer;">
+                    <img src="https://www.redditstatic.com/desktop2x/img/favicon/favicon-32x32.png" alt="Reddit" style="width: 24px; height: 24px;">
+                </button>
+                <button onclick="location.href='https://twitter.com/'" style="background-color: white; border: none; padding: 0.5rem; border-radius: 4px; cursor: pointer;">
+                    <img src="https://abs.twimg.com/favicons/twitter.2.ico" alt="X" style="width: 24px; height: 24px;">
+                </button>
                 <button>버튼 6</button>
                 <button>버튼 7</button>
                 <button>버튼 8</button>
