@@ -149,6 +149,23 @@
             text-decoration: underline; /* 밑줄 추가 */
         }
     </style>
+    <style>
+        .icon-button {
+            background-color: white;
+            border: none;
+            padding: 0.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease;
+        }
+        .icon-button img {
+            width: 32px;
+            height: 32px;
+        }
+        .icon-button:hover {
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.7); /* 형광 불빛 효과 */
+        }
+    </style>
     </head>
 <body>
     <header style="background-color: transparent;"></header>
@@ -187,39 +204,21 @@
             <!-- ...other grid cells can be filled as needed... -->
             <div class="button-container" style="background-color: #fffbe6;">
                 <!-- 20 buttons -->
-                <button onclick="location.href='https://www.acmicpc.net/'" style="background-color: white; border: none; padding: 0.5rem; border-radius: 4px; cursor: pointer;">
-                    <img src="https://www.acmicpc.net/favicon.ico" alt="백준" style="width: 24px; height: 24px;">
+                <button onclick="location.href='https://www.acmicpc.net/'" class="icon-button">
+                    <img src="https://www.acmicpc.net/favicon.ico" alt="백준">
                 </button>
-                <button onclick="location.href='https://github.com/'" style="background-color: white; border: none; padding: 0.5rem; border-radius: 4px; cursor: pointer;">
-                    <img src="https://github.githubassets.com/favicons/favicon.svg" alt="GitHub" style="width: 24px; height: 24px;">
+                <button onclick="location.href='https://github.com/'" class="icon-button">
+                    <img src="https://github.githubassets.com/favicons/favicon.svg" alt="GitHub">
                 </button>
-                <button onclick="location.href='https://blog.naver.com/'" style="background-color: white; border: none; padding: 0.5rem; border-radius: 4px; cursor: pointer;">
-                    <img src="https://blogimgs.pstatic.net/nblog/mylog/post/og_default_image.png" alt="NBlog" style="width: 24px; height: 24px;">
+                <button onclick="location.href='https://blog.naver.com/'" class="icon-button">
+                    <img src="https://blogimgs.pstatic.net/nblog/mylog/post/og_default_image.png" alt="NBlog">
                 </button>
-                <button onclick="location.href='https://www.reddit.com/'" style="background-color: white; border: none; padding: 0.5rem; border-radius: 4px; cursor: pointer;">
-                    <img src="https://www.redditstatic.com/desktop2x/img/favicon/favicon-32x32.png" alt="Reddit" style="width: 24px; height: 24px;">
+                <button onclick="location.href='https://www.reddit.com/'" class="icon-button">
+                    <img src="https://www.redditstatic.com/desktop2x/img/favicon/favicon-32x32.png" alt="Reddit">
                 </button>
-                <button onclick="location.href='https://twitter.com/'" style="background-color: white; border: none; padding: 0.5rem; border-radius: 4px; cursor: pointer;">
-                    <img src="https://abs.twimg.com/favicons/twitter.2.ico" alt="X" style="width: 24px; height: 24px;">
+                <button onclick="location.href='https://x.com/'" class="icon-button">
+                    <img src="https://x.com/favicon.ico" alt="X">
                 </button>
-                <button>버튼 6</button>
-                <button>버튼 7</button>
-                <button>버튼 8</button>
-                <button>버튼 9</button>
-                <button>버튼 10</button>
-                <button>버튼 11</button>
-                <button>버튼 12</button>
-                <button>버튼 13</button>
-                <button>버튼 14</button>
-                <button>버튼 15</button>
-                <button>버튼 16</button>
-                <button>버튼 17</button>
-                <button>버튼 18</button>
-                <button>버튼 19</button>
-                <button> 누르면 인정 </button>
-
-
-            <!-- 로그인 버튼  -->
             </div>
             <style>
                 .login-container {
@@ -301,7 +300,10 @@
             <div class="new-section6" style="margin-top: 1rem; padding: 1rem; background-color: #f0e68c; border: 1.5px solid black; border-radius: 12px; text-align: center;">
                 <p>새로운 영역 6</p>
             </div>
-            <div class="new-section8" style="margin-top: 1rem; padding: 1rem; background-color: #ffe4b5; border: 1.5px solid black; border-radius: 12px; text-align: center;">
+            <div class="new-section7" style="margin-top: 1rem; padding: 1rem; background-color: #87ceeb; border: 1.5px solid black; border-radius: 12px; text-align: center;">
+                <p>새로운 영역 7</p>
+            </div>
+            <div class="new-section8" style="margin-top: 1rem; padding: 1rem; background-color: #ffb6c1; border: 1.5px solid black; border-radius: 12px; text-align: center;">
                 <p>새로운 영역 8</p>
             </div>
 
