@@ -69,7 +69,7 @@
             display: flex;
             justify-content: center;
             padding: 1rem;
-            border: 1px solid #ccc;
+            border: 1px solid black;
             border-radius: 8px;
             background-color: #fff;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -105,7 +105,6 @@
             align-items: center;
             justify-content: flex-start;
             gap: 0.5rem;
-            overflow-y: auto;
             padding: 1rem;
         }
         .button-container button {
@@ -144,11 +143,13 @@
     </style>
 </head>
 <body>
-    <header style="background-color: #d2b48c;"></header>
-        <h1 style="font-size: 16px; font-family: serif; background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet); 
-            -webkit-background-clip: text; 
-            -webkit-text-fill-color: transparent; 
-            animation: rainbow 3s linear infinite;"> Information Retrieval Portfolio </h1>
+    <header style="background-color: transparent;"></header>
+    <p style="font-size: 16px; font-family: serif; background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    animation: rainbow 3s linear infinite; 
+    background-size: 300%;">
+             Information Retrieval Portfolio </p>
         <style>
             @keyframes rainbow {
             0% {
@@ -173,16 +174,16 @@
             </style>
         </div>
     </header>
-    <main style="background-color: #e6f7ff;">
+    <main style="background-color: #e6f7ff; padding: 2rem; min-height: auto;">
         <div class="grid-container" style="background-color: #f9f9f9;">
             <!-- ...other grid cells can be filled as needed... -->
             <div class="button-container" style="background-color: #fffbe6;">
                 <!-- 20 buttons -->
-                <button onclick="location.href='https://www.acmicpc.net/'"> 백준 조지기 </button>
-                <button>버튼 2</button>
-                <button>버튼 3</button>
-                <button>버튼 4</button>
-                <button>버튼 5</button>
+                <button onclick="location.href='https://www.acmicpc.net/'"> 백준 </button>
+                <button> Git </button>
+                <button> NBlog</button>
+                <button> Reddit </button>
+                <button> X </button>
                 <button>버튼 6</button>
                 <button>버튼 7</button>
                 <button>버튼 8</button>
@@ -197,21 +198,95 @@
                 <button>버튼 17</button>
                 <button>버튼 18</button>
                 <button>버튼 19</button>
-                <button>버튼 20</button>
+                <button> 누르면 인정 </button>
+
+
             <!-- 로그인 버튼  -->
             </div>
-            <div class="login-container" style="background-color: #e6ffe6; border: none; box-shadow: none;">
-                <div>
-                    <button onclick="location.href='login.html';" style="background-color: blue; color: white; border: none; padding: 0.5rem 1rem; cursor: pointer; border-radius: 20px; font-size: 1rem; transition: box-shadow 0.3s ease; width: 100%;">
-                        로그인
-                    </button>
+            <style>
+                .login-container {
+                    grid-column: 3 / 4;
+                    grid-row: 1 / 2;
+                    display: flex;
+                    justify-content: center;
+                    padding: 1rem;
+                    border: 2px solid #333; /* 실선 추가 */
+                    border-radius: 12px; /* 모서리를 더 둥글게 */
+                    background-color: #fff;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    width: 100%; /* 오른쪽 끝까지 확장 */
+                }
+            </style>
+            
+            <div class="login-container" style="border: 1.5px solid black; box-shadow: none; display: flex; flex-direction: column; width: 100%; justify-content: center; background-color: #d2b48c;">
+                <div class="container1" style="flex: 0.5; text-align: center; padding: 0.5rem;">
+                    <p style="font-size: 16px; font-family: serif; background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet); 
+                        -webkit-background-clip: text; 
+                        -webkit-text-fill-color: transparent; 
+                        animation: rainbow 3s linear infinite; 
+                        background-size: 300%;">
+                        Hash Function Portfolio
+                    </p>
                     <style>
-                        .login-container button:hover {
-                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                        @keyframes rainbow {
+                            0% {
+                                background-position: 0% 50%;
+                            }
+                            100% {
+                                background-position: 100% 50%;
+                            }
                         }
                     </style>
                 </div>
-                
+
+                <div class="container2" style="flex: 1; text-align: center; padding: 0.5rem;">
+                    <button onclick="location.href='login.html';" style="background-color: blue; color: white; border: none; padding: 1rem 2rem; cursor: pointer; border-radius: 12px; font-size: 1rem; transition: box-shadow 0.3s ease; width: 80%; height: 100%;">
+                        로그인
+                    </button>
+                </div>
+
+                <div class="container3" style="flex: 0.5; text-align: center; padding: 0.5rem; display: flex; flex-direction: row;">
+                    <div class="container3_1" style="flex: 1; text-align: center; padding: 0.5rem;">
+                        <button style="background-color: #333; color: white; border: none; padding: 0.5rem 1rem; cursor: pointer; border-radius: 8px; font-size: 8pt; transition: box-shadow 0.3s ease;">
+                            아이디 찾기
+                        </button>
+                    </div>
+                    <div class="container3_2" style="flex: 1; text-align: center; padding: 0.5rem;">
+                        <button style="background-color: #333; color: white; border: none; padding: 0.5rem 1rem; cursor: pointer; border-radius: 8px; font-size: 8pt; transition: box-shadow 0.3s ease;">
+                            비밀번호 찾기
+                        </button>
+                    </div>
+                    <div class="container3_3" style="flex: 1; text-align: center; padding: 0.5rem;">
+                        <button style="background-color: #333; color: white; border: none; padding: 0.5rem 1rem; cursor: pointer; border-radius: 8px; font-size: 8pt; transition: box-shadow 0.3s ease;">
+                            회원가입
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="new-section" style="margin-top: 1rem; padding: 1rem; background-color: #add8e6; border: 1.5px solid black; border-radius: 12px; text-align: center;">
+                <p>새로운 영역</p>
+            </div>
+            <div class="new-section2" style="margin-top: 1rem; padding: 1rem; background-color: #90ee90; border: 1.5px solid black; border-radius: 12px; text-align: center;">
+                <p>새로운 영역 2</p>
+            </div>
+            <div class="new-section3" style="margin-top: 1rem; padding: 1rem; background-color: #ffcccb; border: 1.5px solid black; border-radius: 12px; text-align: center;">
+                <p>새로운 영역 3</p>
+            </div>
+            <div class="new-section4" style="margin-top: 1rem; padding: 1rem; background-color: #ffa07a; border: 1.5px solid black; border-radius: 12px; text-align: center;">
+                <p>새로운 영역 4</p>
+            </div>
+            <div class="new-section5" style="margin-top: 1rem; padding: 1rem; background-color: #dda0dd; border: 1.5px solid black; border-radius: 12px; text-align: center;">
+                <p>새로운 영역 5</p>
+            </div>
+            <div class="new-section6" style="margin-top: 1rem; padding: 1rem; background-color: #f0e68c; border: 1.5px solid black; border-radius: 12px; text-align: center;">
+                <p>새로운 영역 6</p>
+            </div>
+            <div class="new-section8" style="margin-top: 1rem; padding: 1rem; background-color: #ffe4b5; border: 1.5px solid black; border-radius: 12px; text-align: center;">
+                <p>새로운 영역 8</p>
+            </div>
+
         </div>
     </main>
     <footer>
